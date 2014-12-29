@@ -2,7 +2,7 @@ package Test::Pretty;
 use strict;
 use warnings;
 use 5.008001;
-our $VERSION = '0.30';
+our $VERSION = '0.31';
 
 use Test::Builder 0.82;
 use Term::Encoding ();
@@ -198,7 +198,6 @@ sub _ok {
     if (defined($line)) {
         $src_line = $get_src_line->($filename, $line);
     } else {
-        $self->diag(Carp::longmess("\$Test::Builder::Level is invalid. Testing library you are using is broken. : $Test::Builder::Level"));
         $src_line = '';
     }
 
@@ -272,7 +271,7 @@ ERR
     $out .= "\n";
 
     # Dont print 'ok's for subtests. It's not pretty.
-    $self->_print($out) unless $sub =~/subtest/ and $test;
+    $self->_print($out) unless $sub and $sub =~/subtest/ and $test;
 
     unless($test) {
         my $msg = $self->in_todo ? "Failed (TODO)" : "Failed";

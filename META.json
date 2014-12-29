@@ -4,7 +4,7 @@
       "Tokuhiro Matsuno <tokuhirom AAJKLFJEF@ GMAIL COM>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v2.1.1, CPAN::Meta::Converter version 2.141520",
+   "generated_by" : "Minilla/v2.3.0, CPAN::Meta::Converter version 2.141520",
    "license" : [
       "perl_5"
    ],
@@ -68,16 +68,16 @@
    "release_status" : "unstable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/tokuhirom/Test-Pretty/issues"
+         "web" : "https://github.com/aanari/Test-Pretty/issues"
       },
-      "homepage" : "https://github.com/tokuhirom/Test-Pretty",
+      "homepage" : "https://github.com/aanari/Test-Pretty",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/tokuhirom/Test-Pretty.git",
-         "web" : "https://github.com/tokuhirom/Test-Pretty"
+         "url" : "git://github.com/aanari/Test-Pretty.git",
+         "web" : "https://github.com/aanari/Test-Pretty"
       }
    },
-   "version" : "0.30",
+   "version" : "0.31",
    "x_contributors" : [
       "Kenichi Ishigaki <ishigaki@cpan.org>",
       "mattn <mattn.jp@gmail.com>",
